@@ -3,6 +3,7 @@ local cmd = vim.cmd  -- to execute Vim commands e.g. cmd('pwd')
 local fn = vim.fn    -- to call Vim functions e.g. fn.bufnr()
 local g = vim.g      -- a table to access global variables
 local scopes = {o = vim.o, b = vim.bo, w = vim.wo}
+
 -- Set CMD ----------------------------------------------------
 cmd "syntax enable"
 cmd "syntax on"
@@ -10,6 +11,7 @@ cmd "set number"
 cmd "set t_Co=256"
 cmd [[colorscheme dracula]]
 cmd "set relativenumber"
+
 -- Load Plugins ------------------------------------------------
 require("laurie.core.options")
 require("laurie.core.keymaps")
@@ -18,6 +20,7 @@ require("laurie.plugins.nvim-tree")
 require("laurie.plugins.comment")
 require("laurie.plugins.lualine")
 require("laurie.plugins.coc")
+
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the four listed parsers should always be installed)
   ensure_installed = { "c", "lua", "vim", "help", "cpp", "python", "latex", "json", "go", "gitignore", "gitcommit", "diff", "css", "cmake", "sql", "swift", "json5", "java", "http", "html"},
