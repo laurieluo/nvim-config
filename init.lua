@@ -17,6 +17,7 @@ require("laurie.plugins-setup")
 require("laurie.plugins.nvim-tree")
 require("laurie.plugins.comment")
 require("laurie.plugins.lualine")
+require("laurie.plugins.coc")
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the four listed parsers should always be installed)
   ensure_installed = { "c", "lua", "vim", "help", "cpp", "python", "latex", "json", "go", "gitignore", "gitcommit", "diff", "css", "cmake", "sql", "swift", "json5", "java", "http", "html"},

@@ -5,7 +5,7 @@ local keymap = vim.keymap
 keymap.set("i", "ii", "<Esc>")
 keymap.set("n", "<leader>sv", "<C-w>")
 keymap.set("n", "<leader>sx", ":close<cr>")
-keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>")
+keymap.set("n", "<leader>t", ":NvimTreeToggle<cr>")
 
 local builtin = require('telescope.builtin')
 keymap.set('n', '<leader>ff', builtin.find_files, {})
